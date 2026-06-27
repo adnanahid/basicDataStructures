@@ -16,9 +16,9 @@ int main() {
         for (int i = 0; i < n; i++)
             cin >> a[i];
 
-        bool is_sorted = 1;
+        int is_sorted = 1;
         for (int i = 0; i < n - 1; i++)
-            if (a[i - 1] > a[i] || a[i] > a[i + 1]) {
+            if (a[i] > a[i + 1]) {
                 is_sorted = 0;
                 break;
             }
