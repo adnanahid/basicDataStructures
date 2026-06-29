@@ -1,4 +1,4 @@
-// টাস্ক ১: ৪টি নোডের ডাইনামিক লিঙ্কড লিস্ট
+//!  টাস্ক ১: ৪টি নোডের ডাইনামিক লিঙ্কড লিস্ট
 // যা করতে হবে:
 // ৪টি ডাইনামিক নোড তৈরি করবেন যাদের ভ্যালু হবে যথাক্রমে 5, 10, 15, এবং 20।
 // নোডগুলোকে পরস্পরের সাথে লিঙ্ক করবেন।
@@ -36,7 +36,7 @@
 //     return 0;
 // }
 
-// টাস্ক ২: লুপ দিয়ে লিঙ্কড লিস্ট প্রিন্ট করা (Traversing)
+//!  টাস্ক ২: লুপ দিয়ে লিঙ্কড লিস্ট প্রিন্ট করা (Traversing)
 // যা করতে হবে:
 // ৩ বা ৪টি নোডের একটি ডাইনামিক লিঙ্কড লিস্ট তৈরি করুন।
 // এবার একটি while লুপ ব্যবহার করে লিস্টের প্রথম নোড থেকে শেষ নোড পর্যন্ত সব ভ্যালু পর পর প্রিন্ট করুন।
@@ -77,7 +77,7 @@
 //     return 0;
 // }
 
-// টাস্ক 3: স্ট্যাটিক ও ডাইনামিক নোডের জোড়াতালি (Hybrid Challenge)
+//!  টাস্ক 3: স্ট্যাটিক ও ডাইনামিক নোডের জোড়াতালি (Hybrid Challenge)
 // যা করতে হবে:
 // একটি স্ট্যাটিক নোড তৈরি করুন: Node a(50);
 // একটি ডাইনামিক নোড তৈরি করুন: Node* b = new Node(100);
@@ -110,3 +110,37 @@
 
 //     return 0;
 // }
+
+//! practice problem
+// Module-4: Practice Problem
+
+// 5   | 1000    7   | 1050   1   | 2000    14   | 1020    3   | 3000   11 | NULL
+//    500           1000        1050           2000            ?          3000
+
+// 1. Why do you think linked-list requires more memory than an array when storing the same number of elements?
+// ans: linked list store its value and address of the next element and for that we need to use obj for each element of a linked list so thats why linked list takes more memory than array.
+
+// 2. Write down Three Limitations of the array which can be solved by the use of Linked List.
+// ans: so the limitations are:
+//     1. we cant increase space for array but we can for linked list.
+//     2.
+//     3.
+
+// 3.What is the value of Head ?
+// ans: the value of head is 5.
+
+// 4. What is the value of ? marked address location?
+// ans: the value of ? address location is 1020.
+
+// 5. What will be the value of Head->Next->Next->Value?
+// ans: the value of Head->Next->Next->Value is 1.
+
+// 6. What will be the value of Sum following pseudocode snippets?
+// Sum = 0
+// Temp = Head
+// While ( Temp -> Next!= 1020){
+// 	Sum += Temp-> value
+// 	Temp = Temp -> Next
+// }
+// Sum -= Temp -> value;
+// ans: the sum is -1.
