@@ -16,10 +16,9 @@ int main() {
     for (int i = 1; i < n; i++)
         a[i] += a[i - 1];
 
-    reverse(a.begin(), a.end());
-
-    for (int i = 0; i < n; i++)
+    for (int i = n - 1; i >= 0; i--) {
         cout << a[i] << " ";
+    }
     cout << "\n";
 
     return 0;
