@@ -1,0 +1,1 @@
+{"name":"Local: Cooler","url":"/home/adnan/phitron/semester02/01_basicDataStructures/week02/module07/Cooler.cpp","tests":[{"id":1783005108232,"input":"3\n10 9\n40 38\n40 0","output":"10\n79\n820"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/adnan/phitron/semester02/01_basicDataStructures/week02/module07/Cooler.cpp","group":"local","local":true}
