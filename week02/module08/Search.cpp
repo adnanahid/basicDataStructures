@@ -1,20 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
-typedef long long lld;
 
 
 class Node{
     public:
-        lld val;
+        int val;
         Node* next;
-        Node(lld val){
+        Node(int val){
             this->val = val;
             this->next = nullptr;
         }
 };
 
-void insterIntoList(Node* &head, Node* &tail, lld val);
-void search(Node*head, lld x);
+void insterIntoList(Node* &head, Node* &tail, int val);
+void search(Node*head, int x);
 void clearList(Node* &head);
 
 int main(){
@@ -26,19 +25,19 @@ int main(){
     while(t--){
         Node* head = nullptr;
         Node* tail = nullptr;
-        lld val;
+        int val;
         while(cin >> val){
             if(val == -1) break;
             insterIntoList(head, tail, val);
         }
-        lld x; cin >> x;
+        int x; cin >> x;
         search(head, x);
         clearList(head);
     }
     return 0;
 }
 
-void insterIntoList(Node* &head, Node* &tail, lld val){
+void insterIntoList(Node* &head, Node* &tail, int val){
     Node* newNode = new Node(val);
     if(head == nullptr){
         head = newNode;
@@ -49,7 +48,7 @@ void insterIntoList(Node* &head, Node* &tail, lld val){
     tail = newNode;
 }
 
-void search(Node* head, lld x){
+void search(Node* head, int x){
     Node* temp = head;
     int index = 0;
 
