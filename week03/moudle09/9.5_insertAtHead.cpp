@@ -9,7 +9,7 @@ class Node {
     Node(int data) : data(data), next(nullptr), prev(nullptr) {}
 };
 
-void print_forword(Node* head){
+void print_forward(Node* head){
     Node* temp = head;
     while(temp){
       std::cout << temp->data << " ";
@@ -18,7 +18,7 @@ void print_forword(Node* head){
     std::cout << "\n";
 }
 
-void print_backword(Node* tail){
+void print_backward(Node* tail){
     Node* temp = tail;
     while(temp){
       std::cout << temp->data << " ";
@@ -59,8 +59,8 @@ int main() {
 
     insert_At_head(40, head, tail);
 
-    print_forword(head);
-    print_backword(tail);
+    print_forward(head);
+    print_backward(tail);
 
     return 0;
 }

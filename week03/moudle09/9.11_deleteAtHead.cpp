@@ -27,18 +27,11 @@ void print_backward(Node* tail){
     std::cout << "\n";
 }
 
-void insert_At_tail(int data, Node* &head, Node* &tail){
-    Node* newNode = new Node(data);
-
-    if(!head){
-        head = newNode;
-        tail = newNode;
-        return;
-    }
-
-    newNode->prev = tail;
-    tail->next = newNode;
-    tail = newNode;
+void delete_at_head(Node* &head){
+    Node* deleteNode = head;
+    head = deleteNode->next;
+    head->prev = nullptr;
+    delete deleteNode;
 }
 
 int main() {
@@ -50,16 +43,16 @@ int main() {
     Node* tail = new Node(30);
     
     head->next = a; 
-    
     a->prev = head;
     a->next = tail;
-    
     tail->prev = a;
 
-    insert_At_tail(40, head, tail);
+    delete_at_head(head);
 
+    std::cout << "Forward: ";
     print_forward(head);
-    print_backward(tail);
 
+    std::cout << "Backward: ";
+    print_backward(tail);
     return 0;
 }

@@ -8,7 +8,7 @@ class Node {
     Node(int val) : val(val), next(nullptr), prev(nullptr) {}
 };
 
-void print_forword(Node* head){
+void print_forward(Node* head){
     Node* temp = head;
     while(temp){
       std::cout << temp->val << " ";
@@ -17,7 +17,7 @@ void print_forword(Node* head){
     std::cout << "\n";
 }
 
-void print_backword(Node* tail){
+void print_backward(Node* tail){
     Node* temp = tail;
     while(temp){
       std::cout << temp->val << " ";
@@ -41,8 +41,8 @@ int main() {
     
     tail->prev = a;
 
-    print_forword(head);
-    print_backword(tail);
+    print_forward(head);
+    print_backward(tail);
 
     return 0;
 }
